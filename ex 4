@@ -1,0 +1,39 @@
+na tipagem estática os tipos das variáveis são definidos em tempo de compilação, o compilador sabe o tipo de cada variável antes do programa 
+rodar, isso exige que o programador declare os tipos.
+
+na tipagem dinâmica os tipos das variáveis são definidos em tempo de execução, o tipo pode mudar ao longo do tempo,não precisa declarar o tipo 
+explicitamente.
+
+linguagens que usam tipagem estática: c, c++.
+linguagens que usam tipagem dinâmica: python, node.js.
+
+linguagens com tipagem estática são tipicamente mais rápidas o compilador já sabe exatamente quais operações serão realizadas com cada variável,
+isso permite otimizações mais agressivas e eliminação de verificações de tipo em tempo de execução.Já em linguagens dinâmicas, o interpretador 
+precisa verificar o tipo durante a execução.
+
+Exemplo:
+Em C (tipagem estática):
+int a = 10;
+int b = 20;
+int soma = a + b; 
+
+O compilador sabe que são inteiros e gera código direto para somar
+
+Em Python (tipagem dinâmica):
+a = 10
+b = 20
+soma = a + b  
+
+O interpretador precisa verificar em tempo real se a e b são números
+
+O Python internamente faz:
+
+Verificar o tipo de a
+
+Verificar o tipo de b
+
+Verificar se os dois tipos suportam 
+
+realizar a operação
+
+Esse processo leva mais tempo, mesmo para operações simples como soma de dois números.
