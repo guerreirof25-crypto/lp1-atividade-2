@@ -1,0 +1,11 @@
+ao compilar o programa vai dar erro, pois a operação envolve dois tipos distintos, sem nenhum tipo de conversor.
+os tipos envolvidos são: int e const char*
+a mensagem ao compilar é: 
+/tmp/CwVhLQPb0X/main.c: In function 'main':
+ERROR!
+/tmp/CwVhLQPb0X/main.c:3:30: error: invalid operands to binary - (have 'int' and 'char *')
+    3 |     printf("Soma = %d\n", 100-"10");
+      |                              ^
+      |                              |
+      |                              char *
+isso significa que o erro está na função main pois tentou usar 2 tipos diferentes.
